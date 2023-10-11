@@ -1,0 +1,24 @@
+package day3;
+
+import java.util.Scanner;
+
+public class  Main {
+
+
+
+    public static void main(String[] args) {
+        Scanner userInput = new Scanner (System.in);
+
+        System.out.print("tinggi = ");
+        int panjang = userInput.nextInt();
+        System.out.print("lebar = ");
+
+        int lebar = userInput.nextInt();
+
+        int luas = panjang * lebar;
+        System.out.println("panjang = " + luas);
+       
+       System.out.println("jangan mundur selesaikan apa yang sudah dimulai semangat"); 
+       System.out.println("ngodingnya day3"); 
+    }
+ }
