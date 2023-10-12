@@ -1,0 +1,22 @@
+package day4;
+
+public class Main {
+    public static void main(String[] args) {
+    
+        int angka1 = 5;
+        int angka2 = 7;
+        int hasilPenjumlahan = angka1 + angka2;
+        int hasilPengurangan = angka1 - angka2;
+        int hasilPerkalian = angka1 * angka2;
+        int hasilPembagian = angka2 / angka1;
+        int sisaBagi = angka2 % angka1;
+        
+  
+        System.out.println("Hasil Penjumlahan: " + hasilPenjumlahan);
+        System.out.println("Hasil Pengurangan: " + hasilPengurangan);
+        System.out.println("Hasil Perkalian: " + hasilPerkalian);
+        System.out.println("Hasil Pembagian: " + hasilPembagian);
+        System.out.println("Sisa Bagi: " + sisaBagi);
+    
+	}
+}
