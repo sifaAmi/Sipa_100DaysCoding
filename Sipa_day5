@@ -1,0 +1,10 @@
+package day5;
+
+public class Main {
+	public static void main(String[] args) {
+		
+     int i = 23;
+    System.out.println(" ,,,,,,INTEGER,,,,,,");
+    System.out.println(" nilai integer i = " + i );    System.out.println(" NILAI max  = " + Integer.MAX_VALUE);
+	}
+}
