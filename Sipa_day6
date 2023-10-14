@@ -1,0 +1,14 @@
+package day6;
+
+public class Main {
+	public static void main(String[] args) {
+		
+     byte b = 10;
+    System.out.println(" ,,,,,,BYTE,,,,,,");
+    System.out.println(" nilai byte b = " + b );    System.out.println(" NILAI max  = " + Byte.MAX_VALUE);
+    System.out.println(" NILAI min = " + Byte.MIN_VALUE); 
+    System.out.println("BESAR byte = " + Byte.BYTES + " bytes" );
+    System.out.println("BESAR byte = " + Byte.SIZE + " bit " );
+    
+	}
+}
