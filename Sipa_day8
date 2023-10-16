@@ -1,0 +1,23 @@
+package day8;
+
+      public class main {
+        public static void main(String[ ] args){
+       
+      int nilaipertama = 6;
+      int nilaikedua = 3;
+     
+      int jumlah = nilaipertama + nilaikedua;
+      int kurang = nilaipertama - nilaikedua;
+      int kali = nilaipertama * nilaikedua;
+      int bagi = nilaipertama / nilaikedua;
+      int sisa = nilaipertama % nilaikedua;
+           
+           System.out.println(jumlah);
+           System.out.println(kurang);
+           System.out.println(kali);
+           System.out.println(bagi);
+           System.out.println(sisa);
+           
+             
+        }
+    }        
