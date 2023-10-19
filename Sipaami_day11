@@ -18,28 +18,41 @@ public class Main {
 
         System.out.println("Masukkan pilihan (1/2/3)");
         int nomor = input.nextInt();
-
-        double pajak = 0.0;
+        
+            double pajak = 0.0;
+            double tunjangan = 0.0;
 
         if (nomor == 1) {
-          
-            pajak = 0.10;
+           pajak = 0.10;
+           double pajakDibayar = gaji * pajak;
+           double gajiBersih = gaji - pajakDibayar;
+           System.out.println("Nama: " + nama);
+           System.out.println("Gaji: " + gaji);
+           System.out.println("Pajak: " + pajakDibayar);
+           System.out.println("Gaji Bersih: " + gajiBersih);
+           
         } else if (nomor == 2) {
-      
-            pajak = 0.05;
+         	tunjangan = 0.10;
+         	double tunjanganDiterima = gaji * tunjangan;
+         	double gajiBersih = gaji + tunjanganDiterima;
+         	System.out.println("Nama: " + nama);
+         	System.out.println("Gaji: " + gaji);
+         	System.out.println("Tunjangan: " + tunjanganDiterima);
+         	System.out.println("Gaji Bersih: " + gajiBersih);
+         
         } else if (nomor == 3) {
-            
+           pajak = 0.05;
+           double pajakDibayar = gaji * pajak;
+           double gajiBersih = gaji - pajakDibayar;
+           System.out.println("Nama: " + nama);
+           System.out.println("Gaji: " + gaji);
+           System.out.println("Pajak: " + pajakDibayar);
+           System.out.println("Gaji Bersih: " + gajiBersih);
+           
         } else {
-            System.out.println("Pilihan tidak valid.");
-            
+        	System.out.println("Pilihan tidak valid.");
         }
-
-        double pajakDibayar = gaji * pajak;
-        double gajiBersih = gaji - pajakDibayar;
-
-        System.out.println("Nama: " + nama);
-        System.out.println("Gaji: " + gaji);
-        System.out.println("Pajak: " + pajakDibayar);
-        System.out.println("Gaji Bersih: " + gajiBersih);
+        
+        
     }
 }
