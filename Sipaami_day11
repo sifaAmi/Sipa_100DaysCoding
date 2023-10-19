@@ -1,0 +1,45 @@
+package day11;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Masukkan nama anda : ");
+        String nama = input.nextLine();
+
+        System.out.println("Masukkan gaji : ");
+        double gaji = input.nextDouble();
+
+        System.out.println("Pilih pekerjaan ");
+        System.out.println("1. PNS");
+        System.out.println("2. Buruh");
+        System.out.println("3. Lainnya");
+
+        System.out.println("Masukkan pilihan (1/2/3)");
+        int nomor = input.nextInt();
+
+        double pajak = 0.0; // Initialize the tax variable
+
+        if (nomor == 1) {
+            // Assuming "PNS" is a valid job title, you don't need to compare it here.
+            pajak = 0.10;
+        } else if (nomor == 2) {
+            // Similarly, assuming "buruh" is a valid job title.
+            pajak = 0.05;
+        } else if (nomor == 3) {
+            // Handle other cases if needed
+        } else {
+            System.out.println("Pilihan tidak valid.");
+            return; // Exit the program if the choice is not valid
+        }
+
+        double pajakDibayar = gaji * pajak;
+        double gajiBersih = gaji - pajakDibayar;
+
+        System.out.println("Nama: " + nama);
+        System.out.println("Gaji: " + gaji);
+        System.out.println("Pajak: " + pajakDibayar);
+        System.out.println("Gaji Bersih: " + gajiBersih);
+    }
+}
