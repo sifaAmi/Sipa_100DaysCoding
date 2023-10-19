@@ -19,19 +19,19 @@ public class Main {
         System.out.println("Masukkan pilihan (1/2/3)");
         int nomor = input.nextInt();
 
-        double pajak = 0.0; // Initialize the tax variable
+        double pajak = 0.0;
 
         if (nomor == 1) {
-            // Assuming "PNS" is a valid job title, you don't need to compare it here.
+          
             pajak = 0.10;
         } else if (nomor == 2) {
-            // Similarly, assuming "buruh" is a valid job title.
+      
             pajak = 0.05;
         } else if (nomor == 3) {
-            // Handle other cases if needed
+            
         } else {
             System.out.println("Pilihan tidak valid.");
-            return; // Exit the program if the choice is not valid
+            
         }
 
         double pajakDibayar = gaji * pajak;
