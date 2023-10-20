@@ -40,7 +40,7 @@ public class Main {
          	System.out.println("Tunjangan: " + tunjanganDiterima);
          	System.out.println("Gaji Bersih: " + gajiBersih);
          
-        } else if (nomor == 3) {
+        } else {
            pajak = 0.05;
            double pajakDibayar = gaji * pajak;
            double gajiBersih = gaji - pajakDibayar;
@@ -48,9 +48,6 @@ public class Main {
            System.out.println("Gaji: " + gaji);
            System.out.println("Pajak: " + pajakDibayar);
            System.out.println("Gaji Bersih: " + gajiBersih);
-           
-        } else {
-        	System.out.println("Pilihan tidak valid.");
         }
         
         
