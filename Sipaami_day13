@@ -1,0 +1,29 @@
+package day13;
+import java.util.Scanner;
+
+public class Day_13 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int tahun = 0;
+        int sisa_uang = 0;
+
+        int penghasilan_bulanan = 13000000;
+        int pengeluaran_rumah = 4000000;
+        int biaya_anak_pertama = 2000000;
+        int biaya_anak_lainnya = 1000000;
+        int tabungan_maksimal = 5000000;
+        int harga_pc = 150000000;
+
+        while (sisa_uang < harga_pc) {
+            tahun += 1;
+            sisa_uang += penghasilan_bulanan;
+            sisa_uang -= pengeluaran_rumah;
+            sisa_uang -= biaya_anak_pertama;
+            sisa_uang -= biaya_anak_lainnya * 2;
+            sisa_uang += tabungan_maksimal;
+        }
+
+        System.out.println("Sambo harus menabung selama " + tahun + " tahun untuk membeli PC gaming.");
+    }
+}
