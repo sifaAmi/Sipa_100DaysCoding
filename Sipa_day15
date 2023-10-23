@@ -1,0 +1,20 @@
+package day_15;
+public class LatihanVariabel {
+
+    public static void main(String[] args) {
+        // definisi/deklarasi variabel
+        int nilaiSatu;
+        int nilaiDua = 50;
+
+        // inisialisasi nilaiSatu
+        nilaiSatu = 20;
+
+        // melakukan penambahan
+        int hasilPenambahan = nilaiSatu + nilaiDua;
+
+        // panggil dan cetak 
+        System.out.println("Nilai satu : " + nilaiSatu);
+        System.out.println("Nilai dua : " + nilaiDua);
+        System.out.println("Nilai 1 + Nilai 2 : " + hasilPenambahan);
+    }
+}
