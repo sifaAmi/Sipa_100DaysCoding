@@ -1,0 +1,22 @@
+package day_16;
+public class LatihanVariabel {
+
+    public static void main(String[] args) {
+        // definisi/deklarasi variabel
+        int nilaiSatu;
+        int nilaiDua = 30;
+        int nilaiTiga = 20;
+
+        // inisialisasi nilaiSatu
+        nilaiSatu = 10;
+
+        // melakukan penambahan
+        int hasilPenambahan = nilaiSatu + nilaiDua + nilaiTiga;
+
+        // panggil dan cetak 
+        System.out.println("Nilai satu : " + nilaiSatu);
+        System.out.println("Nilai dua : " + nilaiDua);
+        System.out.println("Nilai tiga : " + nilaiTiga);
+        System.out.println("Nilai 1 + Nilai 2 + Nilai 3 : " + hasilPenambahan);
+    }
+}
