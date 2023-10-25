@@ -1,0 +1,55 @@
+package day17;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Pilih bangun ruang:");
+        System.out.println("1. Kubus");
+        System.out.println("2. Balok");
+        System.out.println("3. Silinder");
+
+        int pilihan = scanner.nextInt();
+
+        double volume = 0;
+
+        if (pilihan == 1) {
+            System.out.print("Masukkan panjang sisi kubus: ");
+            double sisi_kubus = scanner.nextDouble();
+            volume = hitungVolumeKubus(sisi_kubus);
+        } else if (pilihan == 2) {
+            System.out.print("Masukkan panjang balok: ");
+            double panjang_balok = scanner.nextDouble();
+            System.out.print("Masukkan lebar balok: ");
+            double lebar_balok = scanner.nextDouble();
+            System.out.print("Masukkan tinggi balok: ");
+            double tinggi_balok = scanner.nextDouble();
+            volume = hitungVolumeBalok(panjang_balok, lebar_balok, tinggi_balok);
+        } else if (pilihan == 3) {
+            System.out.print("Masukkan jari-jari silinder: ");
+            double jari_jari_silinder = scanner.nextDouble();
+            System.out.print("Masukkan tinggi silinder: ");
+            double tinggi_silinder = scanner.nextDouble();
+            volume = hitungVolumeSilinder(jari_jari_silinder, tinggi_silinder);
+        } else {
+            System.out.println("Pilihan tidak valid. Silakan pilih nomor 1, 2, atau 3.");
+        }
+
+        if (volume != 0) {
+            System.out.println("Volume adalah: " + volume);
+        }
+    }
+
+    public static double hitungVolumeKubus(double sisi) {
+        return Math.pow(sisi, 3);
+    }
+
+    public static double hitungVolumeBalok(double panjang, double lebar, double tinggi) {
+        return panjang * lebar * tinggi;
+    }
+
+    public static double hitungVolumeSilinder(double jari_jari, double tinggi) {
+        return Math.PI * Math.pow(jari_jari, 2) * tinggi;
+    }
+}
