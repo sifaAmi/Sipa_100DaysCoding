@@ -1,0 +1,13 @@
+package day18;
+
+public class Perulangan{
+    public static void main(String[] args) {
+        System.out.println("ini adalah awal program");
+
+        for (int nilai = 1; nilai <= 8; nilai++) {
+            System.out.println("for loop ke-" + nilai);
+        }
+
+        System.out.println("ini adalah akhir program");
+    }
+}
