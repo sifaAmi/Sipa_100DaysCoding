@@ -1,0 +1,17 @@
+package day19;
+public class Perulangan {
+    public static void main(String[] args) {
+        // Ini dengan list 
+        int[] angka2_list = {0, 2, 4, 8, 10}; 
+        for (int i : angka2_list) {
+            System.out.println("i sekarang -> " + i); 
+        }
+        System.out.println("akhir dari program 1\n");
+
+        // Ini dengan for loop
+        for (int i = 0; i < 5; i++) { 
+            System.out.println("i sekarang -> " + i);
+        }
+        System.out.println("akhir dari program 2");
+    }
+}
