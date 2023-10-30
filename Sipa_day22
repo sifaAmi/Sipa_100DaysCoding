@@ -1,0 +1,25 @@
+package day22;
+import java.util.Scanner;
+public class Perpustakaan {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+       
+       System.out.println("Perpustakaan");
+      
+        System.out.print("Masukkan Jenis Buku (Novel/Komik/Majalah): ");
+        String jenisBuku = input.nextLine();
+        
+        System.out.print("Masukkan Area Pengambilan (a/b/c): ");
+        String areaPengambilan = input.nextLine();
+       
+        if (jenisBuku.equals("Novel") && areaPengambilan.equals("a")) {
+            System.out.println("Benar");
+        } else if (jenisBuku.equals("Komik") && areaPengambilan.equals("b")) {
+            System.out.println("Benar");
+        } else if (jenisBuku.equals("Majalah") && areaPengambilan.equals("c")) {
+            System.out.println("Benar");
+        } else {
+            System.out.println("Salah");
+        }
+    }
+}
