@@ -1,0 +1,42 @@
+package day23;
+import java.util.Scanner;
+
+public class ProgramPercabangan {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan nama Anda: ");
+        String nama = scanner.nextLine();
+        System.out.print("Masukkan penghasilan bulanan (dalam Rp): ");
+        double penghasilan = scanner.nextDouble();
+        System.out.print("Masukkan pekerjaan Anda: ");
+        String pekerjaan = scanner.next();
+
+        double pajak = 0;
+        double bantuan = 0;
+
+        if (penghasilan > 3000000 && penghasilan <= 10000000) {
+           pajak = penghasilan*0.05;
+        } else {
+           pajak = penghasilan*0.15;
+            }
+
+        if (pekerjaan.equalsIgnoreCase("petani")) {
+            bantuan = 1000000;
+        } else if (pekerjaan.equalsIgnoreCase("PNS")) {
+            bantuan = 0;
+        } else {
+        	bantuan = 200000;
+        }
+        double gajiBersih = penghasilan -  pajak + bantuan;
+
+        System.out.println("formasi Gaji");
+        System.out.println("Nama: " + nama);
+        System.out.println("Penghasilan Bulanan: Rp " + penghasilan);
+        System.out.println("Pajak: " +pajak+"%");
+        System.out.println("Bantuan: Rp " + bantuan);
+        System.out.println("Gaji Bersih: Rp " + gajiBersih);
+
+        scanner.close();
+    }
+}
