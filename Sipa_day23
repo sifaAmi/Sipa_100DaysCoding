@@ -17,7 +17,7 @@ public class ProgramPercabangan {
 
         if (penghasilan > 3000000 && penghasilan <= 10000000) {
            pajak = penghasilan*0.05;
-        } else {
+        } else if (penghasilan > 10000000) {
            pajak = penghasilan*0.15;
             }
 
