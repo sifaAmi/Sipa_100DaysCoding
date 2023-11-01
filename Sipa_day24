@@ -22,6 +22,7 @@ public class ProgramPembelianBuah {
         int totalHargaRambutan = hargaRambutanPerKg * jumlahRambutan;
         int totalHargaJeruk = hargaJerukPer3Kg * (jumlahJeruk / 3); 
         int totalBerat = (jumlahApel * beratApelPerBuah) + (jumlahAnggur * 1000) + (jumlahRambutan * 1000) + (jumlahJeruk * 1000);
+        
         int totalHarga = totalHargaApel + (int) totalHargaAnggur + totalHargaRambutan + totalHargaJeruk;
 
         // Menghitung bonus
@@ -32,24 +33,21 @@ public class ProgramPembelianBuah {
 
         
         double totalBonus = bonusApel + bonusAnggur + bonusRambutan + bonusJeruk;
-
-       
         int totalBeratSetelahBonus = totalBerat + (int) (totalBonus * 1000); 
-        double diskon = 0;
-        if (totalBeratSetelahBonus > 20000) {
-            diskon = 0.002 * totalHarga; 
-        }        
-        double totalPembayaran = totalHarga - diskon;
-
+        
+       double diskon = totalHarga * 0.002;
+        double hargaakhir = totalHarga - diskon;
+        
+        
         // Menampilkan output
         System.out.println("Rincian Pembelian:");
-        System.out.println("Harga Apel: " + totalHargaApel + " rupiah");
-        System.out.println("Harga Anggur: " + (int) totalHargaAnggur + " rupiah");
-        System.out.println("Harga Rambutan: " + totalHargaRambutan + " rupiah");
-        System.out.println("Harga Jeruk: " + totalHargaJeruk + " rupiah");
-        System.out.println("Total Harga: " + totalHarga + " rupiah");
+        System.out.println("Harga Apel: " + totalHargaApel + " ribu rupiah");
+        System.out.println("Harga Anggur: " + (int) totalHargaAnggur + " ribu rupiah");
+        System.out.println("Harga Rambutan: " + totalHargaRambutan + " ribu rupiah");
+        System.out.println("Harga Jeruk: " + totalHargaJeruk + " ribu rupiah");
+        System.out.println("Total Harga: " + totalHarga + " ribu rupiah");
         System.out.println("Total Bonus: " + (int) totalBonus + " gram");
-        System.out.println("Total Diskon: " + (int) diskon + " rupiah");
-        System.out.println("Total Pembayaran: " + totalPembayaran + " rupiah");
+        System.out.println("Total Diskon: " + (int) diskon + " ribu rupiah");
+        System.out.println("Total Pembayaran: " + totalHarga + " ribu rupiah");
     }
 }
