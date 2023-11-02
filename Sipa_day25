@@ -1,0 +1,16 @@
+public class Day25 {
+    
+    public static void main(String[] args) {
+        System.out.println("__PERULANGAN__");
+        
+            for(int nilai = 1; nilai <= 10 ; nilai++) {
+                
+                System.out.println(nilai + ". Sipaami");
+                
+        }
+               
+        
+             System.out.println("__SEKIAN DAN TERIMA KASIH😊__");
+   
+    }
+}
