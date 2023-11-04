@@ -1,0 +1,22 @@
+package day27;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Masukkan jumlah lembar dokumen yang akan dicetak: ");
+        int jumlahCetakan = input.nextInt();
+        
+        int jumlah = 0;
+
+        for (int a = 1; a <= jumlahCetakan; a++) {
+            jumlah++;
+            System.out.println("Mencetak lembar dokumen ke-" + a);
+            
+        }
+        
+        System.out.println("Jumlahnya adalah "+jumlah+" lembar");
+        
+    }
+}
