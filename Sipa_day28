@@ -1,0 +1,32 @@
+package day28;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    
+        // Membuat for loop makanan
+        String[] makanan = {"Bakso", "Batagor", "Cilok"};
+        
+        for (String makan : makanan) {
+            System.out.println(makan);
+        }
+        
+        // Membuat variabel angka dan loop while
+        int angka = 0;
+        Scanner input = new Scanner(System.in);
+        while (true) {
+            System.out.print("Masukkan Makanan (lanjut / tidak) : ");
+            String a = input.nextLine();
+            if (a.equals("tidak")) {
+                System.out.println("Angka terakhir : " + angka);
+                break;
+            } else if (a.equals("lanjut")) {
+                angka += 1;
+                System.out.println("Angka ditambah 1 : " + angka);
+            } else {
+                System.out.println("Aksi tidak ada");
+            }
+        }
+        input.close();
+    }
+}
