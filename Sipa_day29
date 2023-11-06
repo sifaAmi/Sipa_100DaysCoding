@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+
+        long luasLahan = 10 * 15;
+        long kampling = 30;
+        long hargaPermeter = 500000;
+        
+        System.out.println("Luas Lahan : " + luasLahan);
+        System.out.println("Banyak Lahan : "+kampling);
+        System.out.println("Harga/meter : Rp. "+hargaPermeter);
+        System.out.println("Harga Keseluruhan: Rp "+((luasLahan*kampling)*hargaPermeter));
+    }
+}
