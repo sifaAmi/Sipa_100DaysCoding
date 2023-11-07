@@ -1,0 +1,14 @@
+package day30;
+public class Main {
+	public static void main(String[] args) {
+		
+		byte umur = 18;
+
+	if (umur >= 18) {
+  	  System.out.println("Anda sudah dewasa");
+	} else {
+  	  System.out.println("Anda masih di bawah umur");
+	}
+		
+	}
+}
