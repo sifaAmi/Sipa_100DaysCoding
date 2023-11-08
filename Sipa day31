@@ -1,0 +1,37 @@
+package day31;
+import java.util.Scanner;
+
+public class PerulanganPercabangan {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Masukkan angka: ");
+        int angka = input.nextInt();
+
+        if (angka % 2 == 0) {
+            System.out.println("Angka " + angka + " adalah bilangan genap.");
+        } else {
+            System.out.println("Angka " + angka + " adalah bilangan ganjil.");
+        }
+
+        System.out.print("Apakah Anda ingin melanjutkan? (ya/tidak): ");
+        String jawaban = input.next();
+
+        while (jawaban.equals("ya")) {
+            System.out.print("Masukkan angka: ");
+            angka = input.nextInt();
+
+            if (angka % 2 == 0) {
+                System.out.println("Angka " + angka + " adalah bilangan genap.");
+            } else {
+                System.out.println("Angka " + angka + " adalah bilangan ganjil.");
+            }
+
+            System.out.print("Apakah Anda ingin melanjutkan? (ya/tidak): ");
+            jawaban = input.next();
+        }
+
+        System.out.println("Terima kasih!");
+        input.close();
+    }
+}
