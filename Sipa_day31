@@ -1,4 +1,4 @@
-package day31;
+package day32;
 import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
@@ -6,7 +6,7 @@ public class Main {
 	          Scanner input = new Scanner(System.in);
 	    
 	    while(true){
-	        System.out.print("===Silakan login ke akun anda===");
+	        System.out.print("===Silahkan login ke akun anda===");
 	        String login = input.nextLine();
 	        
 	        System.out.print("Masukkan username anda : ");
