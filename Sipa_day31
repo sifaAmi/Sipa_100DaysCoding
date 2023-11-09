@@ -1,0 +1,32 @@
+package day31;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+	    
+	          Scanner input = new Scanner(System.in);
+	    
+	    while(true){
+	        System.out.print("===Silakan login ke akun anda===");
+	        String login = input.nextLine();
+	        
+	        System.out.print("Masukkan username anda : ");
+	        String username = input.nextLine();
+	    
+	        System.out.print("Masukkan password anda : ");
+	        String password = input.nextLine();
+	    
+	    
+	    if(username.equals("Sipaami") && password.equals("Rixmy23")){
+	        System.out.print(username+  " Anda telah berhasil login " );
+	      
+	        break;
+	        
+	    }else{
+	        System.out.println("Username dan password anda salah!");
+	        
+	    }
+	        
+	    }
+	    
+	    }
+  	}
