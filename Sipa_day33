@@ -1,0 +1,27 @@
+package Day33;
+  import java.util.Scanner;
+    public class Day33{
+       public static void main(String[] args) {
+     Scanner input = new Scanner(System.in);
+           
+           System.out.print(" Masukkan nama anda : ");
+           String nama = input.nextLine();
+           System.out.print(" Masukkan Nim anda : ");
+           String Nim = input.nextLine();
+           System.out.print(" Masukkan kelas anda : ");
+           String kelas = input.nextLine();
+            
+                System.out.println("===Hasil nilai semester akhir===");
+           System.out.print("Masukkan nilai akhir anda : ");
+           int nilaiAkhir = input.nextInt();
+
+        if (nilaiAkhir >= 80 && nilaiAkhir <= 95) {
+            System.out.print("Selamat! Anda lulus dengan nilai sangat baik.");
+        } else if (nilaiAkhir >= 58 && nilaiAkhir <= 70) {
+            System.out.print("Anda lulus dengan nilai cukup baik.");
+        } else {
+            System.out.print("Maaf, Anda belum lulus. Silakan coba lagi.");
+           
+        }
+    }
+}
