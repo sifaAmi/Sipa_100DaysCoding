@@ -1,0 +1,32 @@
+package day34;
+public class Main {
+	public static void main(String[] args) {
+
+		System.out.println("===== Array Bersifat Primitif =====");
+		
+		int[] nilai = {1,2,3,4,5,6,7,8,9};
+		
+			System.out.println(nilai[7]);
+		
+		nilai[7] = 9;
+		
+			System.out.println(nilai[7]);
+		
+		double[] nilai1 = {1.0, 2.0, 3.0};
+		
+			System.out.println(nilai1[1]);
+		
+		nilai1[1] += 0.5;
+		nilai1[2] *= 0;
+		
+			System.out.println(nilai1[1]);
+			System.out.println(nilai1[2]);
+			
+		char[] nilai2 = {'A', 'B', 'C', 'D', 'E'};
+		
+			System.out.println(nilai2[0]+"+");
+			
+		System.out.println("===== Semangat =====");
+			
+	}
+} 
