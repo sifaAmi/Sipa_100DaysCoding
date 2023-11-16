@@ -1,0 +1,35 @@
+package day39;
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println("===== Array ke-1 =====");
+
+        int[] array1 = {1, 2, 3, 4, 5};
+        System.out.println(Arrays.toString(array1));
+        for (int a = 0; a < 5; a++) {
+            System.out.println("indeks ke " + a + " = " + array1[a]);
+        }
+
+        System.out.println("===== Array ke-2 =====");
+
+        int[] array2 = new int[5];
+        for (int b = 0; b < 5; b++) {
+            
+            array2[b] = b + 1;
+        }
+        System.out.println(Arrays.toString(array2));
+
+        for (int b = 0; b < 5; b++) {
+            System.out.println("index ke " + b + " = " + array2[b]);
+        }
+
+        System.out.println("===== Menampilkan nilai array =====");
+
+        System.out.println("Array pertama = " + Arrays.toString(array1));
+        System.out.println("Array kedua = " + Arrays.toString(array2));
+
+        System.out.println("===selesai===");
+    }
+}
