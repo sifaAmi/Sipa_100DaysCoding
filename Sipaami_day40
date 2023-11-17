@@ -1,0 +1,21 @@
+package day40;
+import java.util.Arrays;
+public class Main {
+	public static void main(String[] args) {
+		
+		System.out.println("===== Menampilkan Array =====");
+		
+		String[] nama = {"Saya","Kamu","Anda","Aku","Mereka"};
+		
+		System.out.println("=====");
+		
+		System.out.println(nama[0]);
+		System.out.println(nama[1]);
+		System.out.println(nama[2]);
+		System.out.println(nama[3]);
+		System.out.println(nama[4]);
+		
+		System.out.println("=====");
+		
+	}
+}
