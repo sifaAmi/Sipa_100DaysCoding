@@ -1,0 +1,23 @@
+package day45;
+public class Main {		
+    public static void main(String[] args) {
+
+        String nama = "RIXMI";
+        System.out.println(nama);
+
+        int nilai = 78;
+        System.out.println(nilai);
+
+        if (nilai >= 90 && nilai <= 100) {
+            System.out.println("A");
+        } else if (nilai >= 80 && nilai <= 89) {
+            System.out.println("B");
+        } else if (nilai >= 70 && nilai <= 79) {
+            System.out.println("C");
+        } else if (nilai >= 60 && nilai <= 69) {
+            System.out.println("D");
+        } else if (nilai >= 0 && nilai <= 59) {
+            System.out.println("E");
+        }
+    }
+}
