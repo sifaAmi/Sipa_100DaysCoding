@@ -1,0 +1,31 @@
+package day52;
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("---Array Kosong---");
+		int [ ] nilai = new int[6];
+		System.out.println(Arrays.toString(nilai));
+		
+		System.out.print("\nMasukan nilain index ke-1 : ");
+		int tambah1 = input.nextInt();
+		
+		System.out.print("\nMasukan nilain index ke-2 : ");
+		int tambah2 = input.nextInt();
+		
+		System.out.print("\nMasukan nilain index ke-3 : ");
+		int tambah3 = input.nextInt();
+		
+		nilai [0] = tambah1;
+		nilai [1] = tambah2;
+		nilai [2] = tambah3;
+		
+		System.out.println("\n===Array yang telah diisi===");
+		System.out.println("Arrays toString(nilai) : ");
+	
+		
+		
+	}
+}
