@@ -1,0 +1,12 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Day50 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("========");
+
+        String[] mahasiswa = {"ferdi", "albi", "rina", "rabis", "fandi"};
+        System.out.println(Arrays.toString(mahasiswa));
+    }
+}
