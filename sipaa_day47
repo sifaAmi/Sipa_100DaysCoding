@@ -1,0 +1,14 @@
+public class day47 {
+    public static void main(String[] args) {
+        System.out.println("\n\n========");
+        int[] dataNilai = {45, 78, 71, 89, 93, 58, 62, 63, 34, 78};
+
+        for (int c = 0; c < dataNilai.length; c++) {
+            if (dataNilai[c] < 70) {
+                System.out.println(dataNilai[c] + " Tidak lulus");
+            } else {
+                System.out.println(dataNilai[c] + " Lulus");
+            }
+        }
+    }
+}
