@@ -1,0 +1,33 @@
+package day55;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("===== Mengisi array dengan nilai mahasiswa  =====");
+		System.out.print("\nMasukkan jumlah mahasiswa : ");
+		
+		int jumlah = input.nextInt();
+		int[] nilaiMahasiswa = new int[jumlah];
+		
+		for (int a = 0; a < jumlah; a++){
+			System.out.print("Input nilai : ");
+			nilaiMahasiswa[a] = input.nextInt();
+			if (nilaiMahasiswa[a] %2 == 0){
+				System.out.println("nilai "+nilaiMahasiswa[a]+" adalah bilangan genap");
+			} else {
+				System.out.println("nilai "+nilaiMahasiswa[a]+" adalah bilangan ganjil");
+			}
+		}
+		
+		System.out.println("\n=== Nilai Mahasiswa ===");
+		System.out.print("{");
+		
+		for (int b : nilaiMahasiswa){
+			System.out.print(b+",");
+		}
+		System.out.println("}\n\n===== Selesai =====");
+		
+	}
+}
