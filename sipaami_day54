@@ -1,0 +1,30 @@
+package day54;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("===== Mencari data dalam array =====\n");
+
+        String[] nama = {"Mona", "Rina", "Hikmah", "Sofia","yunita","inur"};
+        System.out.print("Masukkan nama yang ingin dicari : ");
+        String cari = input.nextLine();
+        boolean cariNama = false;
+
+        for (int a = 0; a < nama.length; a++) {
+            if (nama[a].equalsIgnoreCase(cari)) {
+                cariNama = true;
+                break;
+            }
+        }
+        if (cariNama) {
+            System.out.println(cari + " ditemukan");
+        } else {
+            System.out.println(cari + " tidak ditemukan");
+        }
+        
+        System.out.println("\n===== Selesai =====");
+
+    }
+}
