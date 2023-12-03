@@ -1,0 +1,30 @@
+package day56;
+import java.util.Arrays;
+public class Main {
+	public static void main(String[] args) {
+		
+		System.out.println("===== Array 1 Dimensi (1D) =====");
+		
+		String[] hari = {"Senin","Selasa","Rabu","Kamis","Jumat","Sabtu","Minggu"};
+		
+		System.out.println("\n=== Menampilkan array dengan Arrays.toString ===");
+		System.out.println(Arrays.toString(hari));
+		System.out.println("===============\n=== Menampilkan array secara manual dengan loop index ===");
+		System.out.print("{"+hari[0]+", ");
+		System.out.print(hari[1]+", ");
+		System.out.print(hari[2]+", ");
+		System.out.print(hari[3]+", ");
+		System.out.print(hari[4]+", ");
+		System.out.print(hari[5]+", ");
+		System.out.print(hari[6]+"}");
+		System.out.println("\n===============\n=== Menampilkan array dengan for loop ===");
+		System.out.print("{");
+		for (int a = 0; a < hari.length; a++){
+			System.out.print(hari[a]+", ");
+		}
+		System.out.print("}");
+		
+		System.out.println("\n\n=== Selesai===");
+		
+	}
+}
