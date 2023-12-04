@@ -1,0 +1,19 @@
+public class day57{
+    public static void main(String[] args) {
+        // Mendefinisikan dan menginisialisasi array satu dimensi
+        int[] array1D = {1, 2, 3, 4, 5};
+
+        // Mengakses elemen array
+        System.out.println("Elemen ke-3: " + array1D[2]);
+
+        // Mengubah nilai elemen array
+        array1D[1] = 10;
+
+        // Menampilkan seluruh elemen array
+        System.out.print("Seluruh elemen array: ");
+        for (int i : array1D) {
+            System.out.print(i + " ");
+          
+        }
+    }
+}
