@@ -1,30 +1,31 @@
-import java.util.Arrays;
+package day61;
+import java.util.Scanner;
 
-public class day61 {
-
+public class main {
     public static void main(String[] args) {
         
-        int[] arrayAngka1 = {1, 2, 3, 4, 5};
+
+        Scanner yu = new Scanner(System.in);
+        System.out.print("Masukan jumlah baris : ");
+        int jumlahBaris = yu.nextInt();
+        System.out.print("Masukan jumlah kolom : ");
+        int jumlahKolom = yu.nextInt();
         
-        // Merubah Array menjadi String
-        System.out.println("\nMerubah Array menjadi string\n============");
-        printArray(arrayAngka1);
+        int data[][] = new int[jumlahBaris][jumlahKolom];
         
-        // Mengkopi Array
-        System.out.println("\nmengkopi Array\n============");
-        int[] arrayAngka2 = new int[5];
-        printArray(arrayAngka1);
-        printArray(arrayAngka2);
         
-        System.out.println("\nMengkopi dengan looping\n============");
-        for(int i = 0; i < arrayAngka1.length; i++){
-            arrayAngka2[i] = arrayAngka1[i];
+        System.out.println(); 
+        System.out.println("==========");
+        
+        for (int i = 0; i < jumlahBaris; i++) {
+            for (int j = 0; j < jumlahKolom; j++) {
+                
+                System.out.print("Input elemen data : ");
+                data[i][j] = yu.nextInt();
+
+            }
+            System.out.println();
         }
-        printArray(arrayAngka1); 
-        printArray(arrayAngka2); 
-    }
-    
-    private static void printArray(int[] dataArray){ // Memperbaiki penulisan static
-        System.out.println("Array = " + Arrays.toString(dataArray));
+        System.out.println("==========");
     }
 }
