@@ -1,0 +1,56 @@
+package day62;
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        System.out.println("====Nomor satu====");
+        
+        Scanner yu = new Scanner(System.in);
+        System.out.print("Masukkan jumlah baris : ");
+        int jumlahBaris = yu.nextInt();
+        System.out.print("Masukkan jumlah kolom : ");
+        int jumlahKolom = yu.nextInt();
+        
+        int data[][] = new int[jumlahBaris][jumlahKolom];
+        
+        System.out.println(); 
+        System.out.println("==========");
+        
+        for (int i = 0; i < jumlahBaris; i++) {
+            for (int j = 0; j < jumlahKolom; j++) {
+                System.out.print("Input elemen data : ");
+                data[i][j] = yu.nextInt();
+            }
+            System.out.println();
+        }
+        System.out.println("==========");  
+
+        
+        System.out.println("====Nomor dua==== ");
+        System.out.println("Mencetak dengan kelas arrays");
+        System.out.println(Arrays.deepToString(data));
+        System.out.println();
+       
+        System.out.println("Mencetak dengan for each");
+        for (int[] angkaBaris : data) {
+            for (int elemen : angkaBaris) {
+                System.out.print(elemen + " ");
+            }
+            System.out.println();
+        }
+           
+        System.out.println("Mencetak dengan while");
+        int x = 0;
+        while (x < data.length) {
+            int c = 0;
+            while (c < data[x].length) {
+                System.out.print(data[x][c] + " ");
+                c++;
+            }
+            System.out.println(); 
+            x++;
+        }
+    }
+}
