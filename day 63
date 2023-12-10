@@ -1,0 +1,31 @@
+package day63;
+import java.util.Arrays;
+public class main {
+	public static void main(String[] args) {
+		
+		int [ ] [ ] angka = new int [3] [3];
+		
+		angka [0] [0] = 24;
+		angka [0] [1] = 31;
+		angka [0] [2] = 68;
+		angka [1] [0] = 55;
+		angka [1] [1] = 83;
+		angka [1] [2] = 99;
+		angka [2] [0] = 45;
+		angka [2] [1] = 77;
+		angka [2] [2] = 23;
+		
+		System.out.println(Arrays.deepToString(angka));
+		int jum = 0;
+		for ( int i = 0;  i < angka.length; i++) {
+			for ( int j = 0; j < angka [1].length; j++) {
+			
+				jum += angka [i] [j]; 
+				
+			}
+						
+		}
+	System.out.println();    
+		System.out.println("Total penjumlahan : "+jum);
+	}
+}
