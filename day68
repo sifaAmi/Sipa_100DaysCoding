@@ -1,0 +1,31 @@
+public class day68 {
+    public static void main(String[] args) {
+        
+        int[][] data = new int[2][3];
+        
+        System.out.println("===Nilai Array===");
+        
+        data[0][0] = 20;
+        data[0][1] = 10;
+        data[0][2] = 50;
+        data[1][0] = 30;
+        data[1][1] = 20;
+        data[1][2] = 10;
+        
+        
+        System.out.println(Arrays.deepToString(data));
+        
+        int total = 0;
+        int x = 0;
+        while(x < data.length) {
+            int c = 0;
+            while(c < data[x].length ) {
+                total += data[x][c];
+                c++; 
+            }
+            x++;   }
+        
+        System.out.println("==============");
+        System.out.println("Hasil penjumlahan :" + total);
+    }
+}
