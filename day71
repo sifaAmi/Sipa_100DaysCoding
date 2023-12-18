@@ -1,0 +1,38 @@
+package day71;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		int baris, kolom;
+		String nama, nim;
+		
+		System.out.println("===== Menginput Nama, NIM dan Nilai =====\n");
+		System.out.print("Masukkan jumlah baris : ");
+		baris = input.nextInt();
+		System.out.print("Masukkan jumlah kolom : ");
+		kolom = input.nextInt();
+		
+		int[][] array = new int[baris][kolom];
+		
+		System.out.println();
+		
+		for (int a = 0; a < baris; a++){
+			for (int b = 0; b < kolom; b++){
+				System.out.print("Masukkan Nama : ");
+				nama = input.next();
+				System.out.print("Masukkan NIM : ");
+				nim = input.next();
+				System.out.print("Masukkan Nilai : ");
+				array[a][b] = input.nextInt();
+				System.out.println("\n=== Menampilkan ===");
+				System.out.println(nama+" "+nim+" "+array[a][b]);
+				System.out.println("-------------");
+			}
+		}
+		
+		System.out.println("\n===== Selesai =====");
+		
+	}
+}
