@@ -1,0 +1,38 @@
+package day76;
+public class Main {
+	public static void main(String[] args) {
+		
+		System.out.println("===== Array 3 Dimensi =====\n");
+		
+		int[][][] array = {
+			{
+				{1,2,3},
+				{4,5,6},
+				{7,8,9}
+				},
+			{
+				{2,3,4},
+				{5,6,7},
+				{8,9,10}
+				},
+			{
+				{3,4,5},
+				{6,7,8},
+				{9,10,11}
+				}
+		};
+		
+		for (int layer = 0; layer < array.length; layer++){
+			System.out.println("===============\nLayer ke "+(layer+1));
+			for (int baris = 0; baris < array[layer].length; baris++){
+				for (int kolom = 0; kolom < array[layer][baris].length; kolom++){
+					System.out.print(array[layer][baris][kolom]+",");
+				}
+				System.out.println();
+			}
+		}
+		
+		System.out.println("===============\n\n===== Selesai =====");
+		
+	}
+}
