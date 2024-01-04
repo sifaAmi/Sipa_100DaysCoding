@@ -1,0 +1,125 @@
+package day88;
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		while (true) {
+			
+			System.out.println("===== Macam-Macam Cara Menampilkan Array 3 Dimensi =====");
+			
+			int[][][] array = {
+				{
+					{11,12,13,14,15},
+					{16,17,18,19,20},
+					{21,22,23,24,25}
+				},
+				{
+					{26,27,28,29,30},
+					{31,32,33,34,35},
+					{36,37,38,39,40}
+				},
+				{
+					{41,42,43,44,45},
+					{46,47,48,49,50},
+					{51,52,53,54,55}
+				},
+				{
+					{56,57,58,59,60},
+					{61,62,63,64,65},
+					{66,67,68,69,70}
+				}
+			};
+			
+			System.out.println("\nPilihan\n1. Kelas array\n2. For loop\n3. For-each loop\n4. while loop\n5. Do-while loop\n6. Selesai");
+			System.out.print("\nMasukkan jawaban : ");
+			char pilih = input.next().charAt(0);
+			
+			if (pilih == '1'){
+				System.out.println("\n= Kelas Array =\n");
+				System.out.println(Arrays.deepToString(array));
+				System.out.println();
+				
+			}  else if (pilih == '2'){
+				System.out.println("\n== For loop ==\n");
+				for (int layer = 0; layer < array.length; layer++){
+					System.out.println("=== Layer ke "+(layer+1)+" ===");
+					for (int baris = 0; baris < array[layer].length; baris++){
+						System.out.print("[");
+						for (int kolom = 0; kolom < array[layer][baris].length; kolom++){
+							System.out.print(array[layer][baris][kolom]+",");
+						}
+						System.out.println("]");
+					}
+				}
+				System.out.println();
+				
+			} else if (pilih == '3'){
+				System.out.println("\nFor-each loop\n");
+				for (int layer =0; layer < array.length; layer++){
+					System.out.println("=== Layer ke "+(layer+1)+" ===");
+					for (int[] baris : array[layer]){
+						System.out.print("[");
+						for (int kolom : baris){
+							System.out.print(kolom+",");
+						}
+						System.out.println("]");
+					}
+				}
+				System.out.println();
+				
+			} else if (pilih == '4'){
+				System.out.println("\n=== While loop ===\n");
+				int layer = 0;
+				while(layer < array.length){
+					System.out.println("=== Layer ke "+(layer+1)+" ===");
+					int baris = 0;
+					while(baris < array[layer].length){
+						System.out.print("[");
+						int kolom = 0;
+						while(kolom < array[layer][baris].length){
+							System.out.print(array[layer][baris][kolom]+",");
+							kolom++;
+						}
+						baris++;
+						System.out.println("]");
+					}
+					layer++;
+				}
+				System.out.println();
+				
+			} else if (pilih == '5'){
+				System.out.println("\n === Do-while loop ===");
+				int layer = 0;
+				do{
+					System.out.println("\n=== Layer ke "+(layer+1)+" ===");
+					int baris = 0;
+					do{
+						System.out.print("[");
+						int kolom = 0;
+						do{
+							System.out.print(array[layer][baris][kolom]+",");
+							kolom++;
+						}while(kolom < array[layer][baris].length);
+						System.out.print("]\n");
+						baris++;
+					}while(baris < array[layer].length);
+					layer++;
+				}while(layer < array.length);
+				System.out.println("\n");
+				
+			} else if (pilih == '6') {
+				break;
+				
+			} else {
+				System.out.println("Pilihan anda tidak valid, silahkan pilih kembali!");
+			}
+			
+		}
+		
+		System.out.println("\n===== Selesai =====");
+		
+	}
+}
