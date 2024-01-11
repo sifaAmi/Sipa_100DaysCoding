@@ -1,0 +1,21 @@
+public class day95  {
+    public static void main(String[] args) {
+        
+         String[][][] namaBulan = {
+                {{"Januari", "Februari", "Maret"}, {"April", "Mei", "Juni"}},
+                {{"Juli", "Agustus", "September"}, {"Oktober", "November", "Desember"}}
+        };
+
+        
+        System.out.println("Nama-nama bulan:");
+        for (String[][] tahun : namaBulan) {
+            for (String[] baris : tahun) {
+                for (String bulan : baris) {
+                    System.out.println(bulan + " ");
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+    }
+}
