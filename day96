@@ -1,0 +1,28 @@
+public class day96  {
+    public static void main(String[] args) {
+
+        String[][][] Nama = new String[3][2][2];
+
+        Nama[0][0][0] ="Mona";
+        Nama[0][0][1] ="Rina";
+        Nama[0][1][0] ="Sofia";
+        Nama[0][1][1] ="Yunita";
+        Nama[1][0][0] ="Hikmah";
+        Nama[1][0][1] ="Suhaimi";
+        Nama[1][1][0] ="Imam";
+        Nama[1][1][1] ="Nizar";
+        Nama[2][0][0] ="Faisal";
+        Nama[2][0][1] ="Rian";
+        Nama[2][1][0] ="Khalilur";
+        Nama[2][1][1] ="Sidik";
+
+        for(int i = 0; i < Nama.length; i++){
+            System.out.println("Kelompok ke- " + (i + 1));   
+            for(int j = 0; j < Nama[i].length; j++){
+                for(int x = 0; x < Nama[i][j].length; x++){
+                    System.out.println(Nama[i][j][x]);
+                }
+            }
+        }
+    }
+}
