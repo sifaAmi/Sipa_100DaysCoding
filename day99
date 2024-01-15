@@ -1,0 +1,28 @@
+public class day99 {
+    public static void main(String[] args) {
+        
+        int size1 = 3;
+        int size2 = 2;
+        int size3 = 3;
+        int size4 = 4;
+
+        
+        int[][][][] fourDArray = new int[size1][size2][size3][size4];
+        Random random = new Random();
+
+        
+        for (int i = 0; i < size1; i++) {
+            for (int j = 0; j < size2; j++) {
+                for (int k = 0; k < size3; k++) {
+                    for (int l = 0; l < size4; l++) {
+                        fourDArray[i][j][k][l] = random.nextInt(100);
+                        System.out.print(fourDArray[i][j][k][l] + " ");
+                    }
+                    System.out.println();
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+    }
+}
